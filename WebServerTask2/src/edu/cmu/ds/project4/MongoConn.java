@@ -34,8 +34,7 @@ public class MongoConn {
      */
     private MongoConn() {
         // connect to mongodb
-        MongoClientURI uri = new MongoClientURI(
-                "mongodb+srv://cifer:zqc94828@cluster0-qyoes.mongodb.net/test?retryWrites=true&w=majority");
+        MongoClientURI uri = new MongoClientURI("");
         MongoClient mongoClient = new MongoClient(uri);
         MongoDatabase database = mongoClient.getDatabase("ds");
         collection = database.getCollection("nasa_log");
