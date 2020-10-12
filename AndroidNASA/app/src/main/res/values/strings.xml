@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NASA APOD</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">NASA Astronomy Picture of the Day</string>
+    <string name="button">Get Your APOD!</string>
+    <string name="wait">waiting for server response...</string>
+    <string name="limit">Date must be between Jun 16, 1995 and today</string>
+</resources>

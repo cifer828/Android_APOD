@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView android:id="@+id/ScrollViewID"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="@string/welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" android:id="@+id/header"
+                    android:textColor="@color/darkPurple"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:background="@color/lightPurple"
+                    android:gravity="center"/>
+
+            <CalendarView
+                    android:layout_width="match_parent"
+                    android:layout_height="308dp" android:id="@+id/calendarView"/>
+
+            <TextView
+                    android:text="@string/limit"
+                    android:id="@+id/limit"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:text="@string/button"
+                    android:layout_width="200dp"
+                    android:background="@drawable/round_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp" android:id="@+id/submit"/>
+
+            <TextView
+                    android:text="@string/wait"
+                    android:id="@+id/waitText"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/image"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:text=""
+                    android:id="@+id/date"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:text=""
+                    android:id="@+id/title"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/darkPurple"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:text=""
+                    android:id="@+id/author"
+                    android:textColor="@color/lightPurple"
+                    android:typeface="monospace"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:text=""
+                    android:id="@+id/description"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:typeface="monospace"
+                    android:textSize="12sp"
+                    android:lineSpacingExtra = "1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
